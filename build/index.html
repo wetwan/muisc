@@ -6,10 +6,11 @@
     <title>music app</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="bg-purple-600 text-red-500 overflow-hidden">
    <main class="flex  flex-col flex-1 p-1 m-1 sm:p-3 sm:m-3 h-dvh overflow-hidden">
-    <div class="border sm:mt-5 w-full h-5/6 flex items-start justify-center py-3 px-2">
+    <div class="border  w-full h-5/6 flex items-start justify-center py-3 px-2">
         <!-- nav for desktop -->
         <section class="w-72 h-full  bg-nav hidden lg:block border p-2">
          <header class="flex items-center justify-start gap-5 border py-2">
@@ -61,7 +62,7 @@
             <ul class="flex absolute bottom-0 flex-col w-full p-0.5  items-center list-none">
                 <a href="#" class=" mb-1 hover:bg-blue-300 focus:bg-blue-300   flex items-center justify-start gap-4 w-[98%] h-9 relative focus:before:absolute focus:before:content-[''] focus:before:mr-3 focus:before:w-1 focus:before:h-4/6 hover:rounded-md focus:rounded-md focus:before:bg-blue-700 focus:before:left-0 focus:before:rounded-lg focus:before:top-1/2 focus:before:-translate-y-1/2">
                     <i class=" fa-solid fa-gear text-white ml-5"></i>
-                    <h3 class="capitalize "> play queue</h3>
+                    <h3 class="capitalize "> settings</h3>
                 </a>
             </ul>   
          </nav>
@@ -128,7 +129,7 @@
          </nav>
         </section>
 <!-- body of the web -->
-        <section class="md:w-5/6 w-dvw  border p-2 h-[510px] md:h-[800px] lg:h-[480px] bg-gradient-to-r from-indigo-500 from-10deg via-sky-500 via-30deg to-emerald-500  ">
+        <section class="md:w-5/6 w-dvw  border p-2 h-[570px] md:h-[800px] lg:h-[480px] bg-gradient-to-r from-indigo-500 from-10deg via-sky-500 via-30deg to-emerald-500  ">
            <!-- header for small screen  -->
             <header class="border py-2 sm:hidden ">
                 <div class="flex items-start justify-start border w-11/12 mx-auto py-1 ">
@@ -156,39 +157,590 @@
                     recent media
                 </p>
             </div>
-            <div class="border overflow-y-scroll overflow-x-hidden h-[350px]">
-                 <div class="grid w-[98%] h-fit border my-1 p-1 grid-cols-2 mx-auto md:grid-cols-4 lg:gird-cols-5 ">
-                   <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3   my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3   my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
-                    <div class="w-52 h-48 border p-3  my-0.5">  </div>
+            <div class="border border-red-200 overflow-y-scroll overflow-x-hidden h-[370px] sm:h-[670px] lg:h-[350px]">
+                 <div class="grid w-[98%] h-fit border my-1 p-1 grid-cols-2 mx-auto md:grid-cols-4 lg:grid-cols-5 ">
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
+                   <div class="framer group w-36 relative h-auto border p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
+                        <div class="w-[97%] rounded-md h-24 border mx-auto">
+                            <img src="./img/pngtree-wolf-logo-png-image_2306634.jpg" class="w-full h-full rounded-md" alt="imgae">
+                        </div>
+                        <p class="10/12 h-auto border font-semibold font-serif my-1 mx-auto text-sm">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class=" h-auto border text-sm font-serif my-1 mx-1">
+                            Lorem ipsum
+                        </p>
+                        <input 
+                            type="checkbox" 
+                            name="check" 
+                            id="check"
+                            class="w group-hover:block hidden  w-5 h-5 border outline-none  hover:accent-blue-500 accent-blue-700 rounded-md absolute top-4 left-4 font-thin"
+                            />
+                            <i class=" group-hover:block hidden  w absolute top-16 text-xl  left-4 bi bi-play-circle"></i>
+                            <i class="group-hover:block hidden  w absolute top-16 right-4 bi bi-three-dots border w-6 h-6 text-center rounded-full p-0 border-red-500"></i>
+                          
+                   </div>
                  
-                </div>  -->
+               
+                    
+                </div>
             </div>
 
           
         </section>
     </div>
-    <div class="border mt-2 w-full h-[100px] z-20"></div>
+    <div class="border mt-2 w-full h-[100px] p-1 z-20">
+        <div class="flex border h-1/6"></div>
+    </div>
 
    </main>
 
    <!-- <style>
-    header{
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background: linear-gradient(40deg ,#5757ef7f ,#2a2abd94,#4949ed48);
-    }
+   .framer:hover .w{
+    display: block;
+   }
+   .w{
+    display: none;
+   }
    </style> -->
 </body>
 </html>
