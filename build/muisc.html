@@ -12,7 +12,7 @@
    <main class="flex  flex-col flex-1 p-1 m-1 h-dvh overflow-hidden">
     <div class="rounded-md   w-full h-[80%] flex items-start justify-center py-3 px-2">
         <!-- nav for desktop -->
-        <section class="rounded w-72 h-full  bg-nav hidden lg:block  p-2">
+        <section class="rounded-md w-72 h-full  bg-nav hidden lg:block  p-2">
          <header class="flex items-center justify-start gap-5  py-2">
             <i class=" fa-solid fa-arrow-left text-xl text-white ml-3"></i>
             <h1 class="text-xl capitalize font-sans font-bold">
@@ -69,7 +69,7 @@
         </section>
 
         <!-- nav for tablet -->
-        <section class="w-20 h-full  bg-nav hidden md:block  lg:hidden  p-2">
+        <section class="w-20 h-full rounded-md bg-nav hidden md:block  lg:hidden  p-2">
    
             <!-- <i class=" fa-solid fa-arrow-left text-xl text-white ml-3"></i> -->
            
@@ -121,7 +121,7 @@
                 </a>
             </ul>
             <ul class="flex absolute bottom-10 flex-col w-full p-0.5  items-center list-none">
-                <a href="#" class=" mb-1 hover:bg-blue-300 focus:bg-blue-300   flex items-center justify-start gap-4 w-[98%] h-9 relative focus:before:absolute focus:before:content-[''] focus:before:mr-3 focus:before:w-1 focus:before:h-4/6 hover:rounded-md focus:rounded-md focus:before:bg-blue-700 focus:before:left-0 focus:before:rounded-lg focus:before:top-1/2 focus:before:-translate-y-1/2">
+                <a href="" class=" mb-1 hover:bg-blue-300 focus:bg-blue-300   flex items-center justify-start gap-4 w-[98%] h-9 relative focus:before:absolute focus:before:content-[''] focus:before:mr-3 focus:before:w-1 focus:before:h-4/6 hover:rounded-md focus:rounded-md focus:before:bg-blue-700 focus:before:left-0 focus:before:rounded-lg focus:before:top-1/2 focus:before:-translate-y-1/2">
                     <i class=" fa-solid fa-gear text-white mx-3"></i>
                 
                 </a>
@@ -129,7 +129,7 @@
          </nav>
         </section>
 <!-- body of the web -->
-        <section class="md:w-full h-full  overflow-hidden p-2  bg-gradient-to-r from-indigo-500 from-10deg via-sky-500 via-30deg to-emerald-500  ">
+        <section class="md:w-full h-full rounded-md overflow-hidden p-2  bg-gradient-to-r from-indigo-500 from-10deg via-sky-500 via-30deg to-emerald-500">
            <!-- header for small screen  -->
             <header class=" py-2 sm:hidden ">
                 <div class="flex items-start justify-start  w-11/12 mx-auto py-1 ">
@@ -144,10 +144,24 @@
             </header>
             <div class="py-1  flex items-center justify-start my-2 gap-10">
                 <h1 class="font-bold font-sans text-3xl capitalize">
-                    home
+                    muisc
                 </h1>
-                <div class="flex items-start w-[400px]  h-11 mr-3 justify-evenly border">
-                
+                <div class="p-1 flex items-start w-[300px]  h-11 mr-3 justify-between ">
+                    <a href="" 
+                        class=" mb-1 hover:text-red-300 px-2 py-1 text-red-500 w-2/6 text-center h-9 relative hover:before:absolute hover:before:content hover:before:h-1 hover:before:w-2/6 hover:before:bg-blue-700 hover:before:-bottom-0 hover:before:rounded-lg hover:before:right-1/2 hover:before:translate-x-3  hover:before:px-2 ">
+                        
+                        <h3 class="capitalize text-center "> music </h3>
+                    </a>
+                    <a href="" 
+                        class=" mb-1 hover:text-red-300 px-2 py-1 text-red-500 w-2/6 text-center h-9 relative hover:before:absolute hover:before:content hover:before:h-1 hover:before:w-2/6 hover:before:bg-blue-700 hover:before:-bottom-0 hover:before:rounded-lg hover:before:right-1/2 hover:before:translate-x-3  hover:before:px-2 ">
+                        
+                        <h3 class="capitalize text-center "> albums</h3>
+                    </a>
+                    <a href="" 
+                        class=" mb-1 hover:text-red-300 px-2 py-1 text-red-500 w-2/6 text-center h-9 relative hover:before:absolute hover:before:content hover:before:h-1 hover:before:w-2/6 hover:before:bg-blue-700 hover:before:-bottom-0 hover:before:rounded-lg hover:before:right-1/2 hover:before:translate-x-3  hover:before:px-2 ">
+                        
+                        <h3 class="capitalize text-center "> Artists </h3>
+                    </a>
                 </div>
               <div class="flex item-center  h-11 mr-3 justify-evenly ml-auto">
                 <i class="fa-regular block fa-folder-open text-2xl p-2  hover:bg-light rounded-md"></i>
@@ -160,7 +174,7 @@
                     recent media
                 </p>
             </div>
-            <div class="rounded-md outline-none scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-500 scrollbar-thumb-rounded overflow-y-scroll overflow-x-hidden h-full">
+            <div class="rounded-md outline-none scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-500 scrollbar-thumb-rounded overflow-y-scroll overflow-x-hidden h-full scroll-smooth pb-32 scroll-mb-9">
                  <div class="grid w-[98%] h-fit  my-1 p-1 grid-cols-2 mx-auto md:grid-cols-4 lg:grid-cols-5 ">
                    <div class="framer group w-36 relative h-auto  p-1  my-0.5 rounded-md hover:shadow-md hover:shadow-blue-100">  
                         <div class="w-[97%] rounded-md h-24  mx-auto">
@@ -731,7 +745,7 @@
           
         </section>
     </div>
-    <section class=" mt-2 w-full h-[100px] p-1 z-20">
+    <section class="rounded-md mt-2 w-full h-[100px] p-1 z-20">
         <div class="flex items-center w-11/12 mx-auto justify-center  h-2/6 p-1">
             <p  class=" w-fit h-full text-xs text-white">
                 1:45
