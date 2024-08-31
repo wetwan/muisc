@@ -22,7 +22,8 @@ module.exports = {
         
       },
       colors:{
-        'light': 'rgba(255, 255, 255, 0.235)'
+        'light': 'rgba(255, 255, 255, 0.235)',
+        'lighter': 'rgba(255, 255, 255, 0.4)'
       }
     },
   },
